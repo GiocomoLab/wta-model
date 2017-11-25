@@ -88,7 +88,7 @@ for n = 1:grid_scale_iter
     
     unstable_input2 = W_usp2*unstable_spatial_maps;
     
-    day2_input = grid_input + W_usp2*unstable_spatial_maps;
+    day2_input = grid_input + unstable_input2;
     
     [day2_output] = wta_mechanism(day2_input,E);
     
